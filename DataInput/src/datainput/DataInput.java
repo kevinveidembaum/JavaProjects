@@ -22,5 +22,4 @@ public class DataInput {
             System.out.printf("Tente novamente %s, REPROVADO! \n", nome);
         }
     }
-    
 }
