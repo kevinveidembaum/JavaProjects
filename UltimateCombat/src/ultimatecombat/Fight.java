@@ -5,7 +5,6 @@ import java.util.Random;
 public class Fight {
     private Fighter desafiado;
     private Fighter desafiante;
-    private int rounds;
     private boolean aprovado;
     
     public void marcarLuta(Fighter lut1, Fighter lut2){
@@ -37,7 +36,7 @@ public class Fight {
                 System.out.println("Empatou!");
                 this.desafiado.empatarLuta();
                 this.desafiante.empatarLuta();
-            }else if(totalPontos < 6){
+            }else if(totalPontos <= 5){
                 System.out.println("O Desafiante "+ this.desafiante.getNome()+ " Ganhou!");
                 this.desafiante.ganharLuta();
                 this.desafiado.perderLuta();
@@ -67,14 +66,6 @@ public class Fight {
     
     public void setDesanfiante(Fighter desafiante){
         this.desafiante = desafiante;
-    }
-
-    public int getRounds() {
-        return rounds;
-    }
-
-    public void setRounds(int rounds) {
-        this.rounds = rounds;
     }
 
     public boolean isAprovado() {

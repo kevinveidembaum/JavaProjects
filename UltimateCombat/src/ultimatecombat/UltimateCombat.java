@@ -14,10 +14,10 @@ public class UltimateCombat {
         l[5] = new Fighter("Guacamole", "Mexico", 28, 33, 10, 3, 1.72f, 108.4f);
         
         Fight ufc = new Fight();
-        ufc.marcarLuta(l[4], l[5]);
-        ufc.lutar(10);
-        l[4].status();
-        l[5].status();
+        ufc.marcarLuta(l[2], l[3]);
+        ufc.lutar(5);
+        l[2].status();
+        l[3].status();
         
     }
     
