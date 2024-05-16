@@ -13,12 +13,11 @@ public class UltimateCombat {
         l[4] = new Fighter("Mc n Cheese", "EUA", 20, 14, 9, 1, 1.75f, 105.4f);
         l[5] = new Fighter("Guacamole", "Mexico", 28, 33, 10, 3, 1.72f, 108.4f);
         
-        l[0].apresentar();
-        l[1].apresentar();
-        l[2].apresentar();
-        l[3].apresentar();
-        l[4].apresentar();
-        l[5].apresentar();
+        Fight ufc = new Fight();
+        ufc.marcarLuta(l[4], l[5]);
+        ufc.lutar(10);
+        l[4].status();
+        l[5].status();
         
     }
     

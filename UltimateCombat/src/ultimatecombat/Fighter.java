@@ -15,10 +15,8 @@ public class Fighter {
         this.altura = altura;
         this.setPeso(peso);
     }
-
     
     public void apresentar(){
-        System.out.println("=======================================");
         System.out.println("LADIES AND GENTLEMAN");
         System.out.println("Apresentando " + this.getNome());
         System.out.println("Vindo do(a) " +this.getNacionalidade());
@@ -27,6 +25,7 @@ public class Fighter {
         System.out.println("Com peso de " + this.getPeso() +"Kg");
         System.out.println("Com " + this.getAltura() + "m de altura");
         System.out.println(this.getVitoria()+" Vitorias, "+this.getDerrota()+" Derrotas e "+this.getEmpate()+" Empates");
+        System.out.println("=======================================");
     }
     
     public void status(){
@@ -50,7 +49,6 @@ public class Fighter {
         this.setEmpate(this.getEmpate() + 1);
     }
     
-    
     public String getNome() {
         return nome;
     }
@@ -67,7 +65,6 @@ public class Fighter {
         this.nacionalidade = nacionalidade;
     }
     
-
     public int getIdade() {
         return idade;
     }
@@ -133,7 +130,6 @@ public class Fighter {
         }else{
             this.categoria = "Invalido";
         }
-        
     }
     
 }
