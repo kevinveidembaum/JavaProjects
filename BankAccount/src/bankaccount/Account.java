@@ -24,7 +24,7 @@ public class Account {
     public void abrirConta(String tipo){
         this.setTipo(tipo);
         this.setStatus(true);
-        if("CC".equals(tipo)){
+        if(tipo.equals("CC")){
             this.setSaldo(50);
         }else if("CP".equals(tipo)){
             this.setSaldo(150);
